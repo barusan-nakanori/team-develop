@@ -1,5 +1,5 @@
 class Item < ApplicationRecord
-  belongs_to :item_genre
+  belongs_to :item_genre, optional: true
   attachment :image
 
   validates :name, presence: true, uniqueness: true
